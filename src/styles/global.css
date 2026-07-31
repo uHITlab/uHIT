@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #201f1f;
+  --color-brand-light: #ffffff;
+  --color-brand-blue: #005a8b;
+  --color-brand-blue-light: #78afe9;
+  --color-brand-blue-dark: #132245;
+  --color-brand-yellow: #fede42;
+  --color-brand-ecru: #fef4bd;
+  --color-brand-gray: #dedede;
+  --color-brand-gray-light: #f5f5f3;
+
+  --font-sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-dark);
+}

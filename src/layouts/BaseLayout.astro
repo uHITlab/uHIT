@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "The uHIT Lab is a hub to catalyze interdisciplinary collaborations on campus and beyond on user-centered health technology design and testing, data collection and sharing, as well as education in digital health.",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white text-brand-dark">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,88 @@
+---
+const footerLinks = [
+  { label: "Directory", href: "#directory" },
+  { label: "Employment", href: "#employment" },
+  { label: "Civil Rights & Title IX", href: "#title-ix" },
+  { label: "Campus Map", href: "#campus-map" },
+  { label: "Safety & Security", href: "#safety" },
+  { label: "Transportation", href: "#transportation" },
+  { label: "Digital Accessibility", href: "#accessibility" },
+  { label: "Website Requests", href: "#website-requests" },
+];
+
+const socialLinks = [
+  { label: "Instagram", href: "#" },
+  { label: "LinkedIn", href: "#" },
+  { label: "GitHub", href: "#" },
+  { label: "YouTube", href: "#" },
+];
+
+const currentYear = 2026;
+---
+
+<footer class="bg-brand-blue-dark text-white">
+  <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-10 lg:py-20">
+    <div class="flex flex-col justify-between gap-12 lg:flex-row lg:gap-20">
+      <div class="flex w-full flex-col gap-4 lg:max-w-xs">
+        <a href="/" class="flex items-center gap-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-md bg-white text-sm font-bold text-brand-blue-dark">
+            uHIT
+          </span>
+          <span class="text-lg font-bold">uHIT</span>
+        </a>
+        <address class="text-sm not-italic leading-relaxed text-white/70">
+          100 Morrissey Blvd.<br />
+          Boston, MA 02125<br />
+          <a href="tel:617.287.5000" class="hover:text-white">617.287.5000</a>
+        </address>
+        <a
+          href="#contact"
+          class="inline-block w-fit rounded-full bg-brand-yellow px-6 py-3 text-sm font-bold text-brand-dark transition-colors hover:bg-brand-ecru"
+        >
+          Contact the Lab
+        </a>
+      </div>
+
+      <div class="flex w-full flex-col gap-8 lg:flex-row lg:justify-end lg:gap-16">
+        <ul class="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-2">
+          {footerLinks.map((link) => (
+            <li class="border-b border-white/20 pb-2">
+              <a href={link.href} class="text-sm font-bold transition-colors hover:text-brand-yellow">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <a href="#top" class="text-sm font-semibold text-white/70 transition-colors hover:text-white">
+          Back To Top ↑
+        </a>
+      </div>
+    </div>
+
+    <ul class="mt-12 flex gap-5 border-t border-white/10 pt-8">
+      {socialLinks.map((social) => (
+        <li>
+          <a
+            href={social.href}
+            aria-label={social.label}
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-xs font-bold transition-colors hover:border-brand-yellow hover:text-brand-yellow"
+          >
+            {social.label.slice(0, 1)}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-10">
+      <p>Copyright © {currentYear} University of Massachusetts Boston. All rights reserved.</p>
+      <ul class="flex gap-4">
+        <li><a href="#umass-system" class="hover:text-white">UMass System</a></li>
+        <li><a href="#accessibility" class="hover:text-white">Accessibility Statement</a></li>
+        <li><a href="#privacy" class="hover:text-white">Privacy &amp; Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

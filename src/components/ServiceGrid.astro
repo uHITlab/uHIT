@@ -1,0 +1,26 @@
+---
+const services = [
+  { title: "Usability Hub" },
+  { title: "Data Science" },
+  { title: "Education" },
+];
+---
+
+<section id="services" class="bg-white py-16 sm:py-20 lg:py-24">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-10">
+    <div class="mb-12 max-w-2xl">
+      <h2 class="text-2xl font-bold text-brand-dark sm:text-3xl">
+        Lab Sections
+      </h2>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {services.map((service) => (
+        <div class="flex flex-col gap-4 rounded-lg border border-brand-gray p-6 transition-shadow hover:shadow-md">
+          <div class="h-32 w-full rounded-md bg-brand-gray-light bg-[repeating-linear-gradient(135deg,#e5e5e3_0px,#e5e5e3_10px,#eeeeec_10px,#eeeeec_20px)]"></div>
+          <h3 class="text-lg font-bold text-brand-blue-dark">{service.title}</h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

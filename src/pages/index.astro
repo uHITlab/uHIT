@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import ServiceGrid from "../components/ServiceGrid.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="uHIT — User-centered Health Information Technology and Health Computing Lab">
+  <Navbar />
+  <Hero
+    title="User-centered Health Information Technology (uHIT) and Health Computing Lab"
+    breadcrumb="Home / User-centered Health Information Technology"
+  />
+  <About />
+  <ServiceGrid />
+  <Footer />
+</BaseLayout>

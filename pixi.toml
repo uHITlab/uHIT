@@ -1,0 +1,12 @@
+[workspace]
+channels = ["conda-forge"]
+name = "GPage_UMB_uHIT"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+nodejs = ">=26.5.0,<26.6"
+git = ">=2.55.0,<3"
+curl = ">=8.21.0,<9"
