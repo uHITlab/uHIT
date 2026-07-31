@@ -1,15 +1,4 @@
 ---
-const footerLinks = [
-  { label: "Directory", href: "#directory" },
-  { label: "Employment", href: "#employment" },
-  { label: "Civil Rights & Title IX", href: "#title-ix" },
-  { label: "Campus Map", href: "#campus-map" },
-  { label: "Safety & Security", href: "#safety" },
-  { label: "Transportation", href: "#transportation" },
-  { label: "Digital Accessibility", href: "#accessibility" },
-  { label: "Website Requests", href: "#website-requests" },
-];
-
 const socialLinks = [
   { label: "Instagram", href: "#" },
   { label: "LinkedIn", href: "#" },
@@ -43,17 +32,7 @@ const currentYear = 2026;
         </a>
       </div>
 
-      <div class="flex w-full flex-col gap-8 lg:flex-row lg:justify-end lg:gap-16">
-        <ul class="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-2">
-          {footerLinks.map((link) => (
-            <li class="border-b border-white/20 pb-2">
-              <a href={link.href} class="text-sm font-bold transition-colors hover:text-brand-yellow">
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
+      <div class="flex w-full flex-col lg:flex-row lg:justify-end">
         <a href="#top" class="text-sm font-semibold text-white/70 transition-colors hover:text-white">
           Back To Top ↑
         </a>
